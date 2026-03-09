@@ -21,4 +21,4 @@ Para que los datos sirvieran para el análisis, se siguieron estos pasos:
 * La **antigüedad** es clave: los clientes que pasan el primer año suelen ser mucho más leales.
 
 ---
-*Nota: Este proyecto fue realizado como parte de mi formación en análisis de datos y mecatrónica (UPIITA).*
+*Nota: Este proyecto fue realizado como parte de mi formación en análisis de datos.*
