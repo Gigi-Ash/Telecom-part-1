@@ -1,24 +1,37 @@
-# 📊 Proyecto de Análisis: Churn Telecom X
+# 📊 Análisis de Evasión de Clientes - Telecom X 🚀
 
-Este repo contiene mi solución para el Challenge de Telecom X. El objetivo principal es entender por qué los clientes se están llendo de la conpañia y qué factores influyen en esa decisión.
+Este proyeto tiene como objetivo analizar los datos de la conpañia "Telecom X" para entender por que los clientes cancelan sus servicios (Churn). Se realizo todo el procceso desde la carga de datos hasta la visualisación de resultados finales.
 
-## 🛠️ Herramientas Usadas
-* **Python** (Lenguaje base)
-* **Pandas** (Para toda la parte de manipulación de datos)
-* **Matplotlib y Seaborn** (Para hacer las gráficas y que se entienda el análisis)
+## 🛠️ Herramientas y Metodología
+- **Lenguaje:** Python
+- **Librerias:** Pandas (para limpesa), Seaborn y Matplotlib (para gráficas).
+- **Procceso:** Se uso `json_normalize` para aplanar los datos anidados del archivo original.
 
-## 📈 Lo que se hiso en el proyecto
-Para que los datos sirvieran para el análisis, se siguieron estos pasos:
+## 📈 Visualisación de Resultados
 
-1. **Carga de Datos:** Se importaron desde un JSON y se "aplanaron" para que cada información tuviera su propia columna (usando `json_normalize`).
-2. **Limpesa de Inconsistencias:** Se corrigieron los formatos de los cargos totales que venian como texto y se quitaron las filas que no tenian información completa.
-3. **Cálculo de Cuentas Diarias:** Se creó una nueva métrica para saver cuánto paga un cliente por día.
-4. **Análisis Visual:** Se crearon gráficas de barras y cajas para comparar la evasión contra el tipo de contrato y los costos mensuales.
+Para que el análisis sea claro, genere las siguientes gráficas que muestran los puntos mas importantes del abandono de clientes:
 
-## 💡 Concluciones rápidas
-* Los clientes con **contratos mensuales** son los que más rápido abandonan la empresa.
-* Hay un punto crítico cuando la **mensualidad pasa de los $70**, donde la gente empieza a buscar otras opciones.
-* La **antigüedad** es clave: los clientes que pasan el primer año suelen ser mucho más leales.
+### 1. Distribusión de la Evasión
+En esta primera gráfica podemos ver la proporción de clientes que se quedan contra los que se van. Es la base para entender el tamaño del problema.
+
+![Distribución de Evasión](1.png)
+
+### 2. Evasión segun el Tipo de Contrato
+Aqui se nota clarito que los clientes con contratos "Mes a mes" tienen mucha mas fuga que los que firman por uno o dos años. La lealtad sube con contratos largos.
+
+![Evasión por Contrato](2.png)
+
+### 3. Mensualidad vs Churn (Punto de quiebre)
+En esta gráfica de cajas vemos que los clientes que pagan mensualidades mas altas (arriba de los $70) tienden a irse mas. El presio es un factor determinante.
+
+![Mensualidad vs Evasión](3.png)
 
 ---
-*Nota: Este proyecto fue realizado como parte de mi formación en análisis de datos.*
+
+## 🧐 Concluciones e Insights
+- **Costo Diario:** Se calculo que el gasto promedio diario de un cliente es de **$2.15 USD**, lo cual es una metrica clave para marketing.
+- **Fidelisación:** Los clientes nuevos son los mas volatiles; si pasan el primer año, la probabilidad de que se queden es muchisimo mayor.
+- **Recomendasion:** Ofreser beneficios a los usuarios de fibra optica y contratos mensuales para que se pasen a planes anuales y no se vallan con la competencia.
+
+---
+*Realizado por una estudiante como parte del Challenge de Alura Latam.*
