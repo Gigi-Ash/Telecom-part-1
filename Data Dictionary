@@ -1,0 +1,11 @@
+Diccionario de Variables:
+
+Evasion: Indica si el cliente canceló el servisio (Target).
+
+Meses_Contrato: Antigüedad del cliente en la conpañia.
+
+Mensualidad: El cobro mensual fijo.
+
+Cuentas_Diarias: Métrica calculada (Mensualidad / 30).
+
+Tipo_Contrato: Si es mensual, por un año o dos años.
